@@ -1,13 +1,11 @@
-#Calculadóra Básica
-
 nome = input('Digite o seu nome? ')
 print('Olá ' + nome)
 
-print('1 + | 2 - | 3 * | 4 / ')
+print('| 1 + | 2 - | 3 * | 4 / |')
 escolha = input('Escolha sua operação:')
 # Conversão de input (Sting para Int)
 int_escolha = int(escolha)
-# Validação número inválido
+
 if int_escolha > 4:
     print('Opção invalida!')
 else:
@@ -25,10 +23,10 @@ divisao = int_n1 / int_n2
 # Escolhas Menu
 
 if int_escolha == 1:
- print('O Resultado é :' + soma)
+ print(f'O Resultado é :{soma}')
 elif int_escolha == 2:
- print('O Resultado é :' +subtracao)
+ print(f'O Resultado é :{subtracao}')
 elif int_escolha == 3:
- print('O Resultado é :' +multiplicacao)
+ print(f'O Resultado é :{multiplicacao}')
 elif int_escolha == 4:
- print('O Resultado é :' +divisao)
+ print(f'O Resultado é :{divisao}')
